@@ -1,0 +1,15 @@
+--indent-columns=4
+--maximum-line-length=80
+--continuation-indentation=4
+--nooutdent-long-lines
+--paren-tightness=2
+--square-bracket-tightness=2
+--block-brace-tightness=0
+--tight-secret-operators
+--nospace-for-semicolon
+--cuddled-else
+--cuddled-blocks
+--opening-sub-brace-on-new-line
+--opening-brace-always-on-right
+--weld-nested-containers
+--stack-opening-tokens
