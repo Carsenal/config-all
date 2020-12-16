@@ -31,8 +31,8 @@ hook global KakBegin .* %{
     evaluate-commands %sh{
         path=`git rev-parse --show-toplevel`
         cd "$path"
-        if [ -e "./tags" ]; then
-            printf "%s\n" "set-option -add current ctagsfiles %{$path/tags}"
+        if [ -e "./.tags" ]; then
+            printf "%s\n" "set-option -add current ctagsfiles %{$path/.tags}"
         fi
     }
     ctags-enable-autoinfo
