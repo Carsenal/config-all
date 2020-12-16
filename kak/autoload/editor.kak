@@ -40,4 +40,6 @@ hook global KakBegin .* %{
             fi
         done
     }
+    ctags-enable-autoinfo
+    ctags-enable-autocomplete
 }
