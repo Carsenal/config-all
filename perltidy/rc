@@ -13,3 +13,6 @@
 --opening-brace-always-on-right
 --weld-nested-containers
 --stack-opening-tokens
+--entab-leading-whitespace=4
+--tabs
+--default-tabsize=4
