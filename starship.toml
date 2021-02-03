@@ -2,32 +2,30 @@ add_newline = false
 format = """
 $git_state\
 $git_branch\
-$git_commit\
 $git_status\
+$git_commit\
 $hostname\
 $directory\
 $character
 """
 
-[character]
-success_symbol="[ɔ](green)"
-error_symbol="[ɔ](bold)"
-
-[env_var]
-variable = "fish_platform_icon"
-default = "?"
-format = "[$env_value]($style) "
-
 [git_branch]
 format = "[$symbol$branch]($style) "
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
 
 [git_commit]
 tag_disabled = false
 only_detached = false
-
-[git_status]
-format = '''([\[$all_status$ahead_behind\]]($style)
-)'''
+format = """
+[ \\($hash\\)]($style)
+"""
 
 [directory]
 truncate_to_repo = false
+
+[character]
+success_symbol="[ɔ](green)"
+error_symbol="[ɔ](red)"
+
