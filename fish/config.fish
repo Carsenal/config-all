@@ -22,7 +22,7 @@ end
 
 function git-doall
 	git add .
-	git commit -m "{$argv[0]}"
+	git commit -m "{$argv[1]}"
 	git push
 end
 
