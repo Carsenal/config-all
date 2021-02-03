@@ -5,9 +5,7 @@ end
 
 function e
 	kak -clear
-	if test (count $argv) -eq 1
-		exec kak $argv
-	else if contains $argv[1] (kak -l)
+	if contains $argv[1] (kak -l)
 		exec kak -c $argv
 	else
 		exec kak -s $argv
