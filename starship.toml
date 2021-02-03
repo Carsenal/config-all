@@ -22,6 +22,9 @@ format = """
 [ \\($hash\\)]($style)
 """
 
+[hostname]
+format="[$hostname]($style) "
+
 [directory]
 truncate_to_repo = false
 
