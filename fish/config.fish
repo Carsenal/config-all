@@ -6,9 +6,9 @@ end
 function e
 	kak -clear
 	if contains $argv[1] (kak -l)
-		exec kak -c $argv
+		kak -c $argv
 	else
-		exec kak -s $argv
+		kak -s $argv
 	end
 end
 
