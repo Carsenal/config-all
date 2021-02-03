@@ -20,6 +20,12 @@ function prg
 	rg -t perl $argv
 end
 
+function git-doall
+	git add .
+	git commit -m "{$argv[0]}"
+	git push
+end
+
 function bs
 	bsh dev
 end
