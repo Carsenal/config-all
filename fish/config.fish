@@ -30,6 +30,10 @@ function bs
 	bsh dev
 end
 
+function fish_greeting
+	fortune
+end
+
 # Configs
 set -U editor kak
 set -U TZ /usr/share/zoneinfo/US/Eastern
