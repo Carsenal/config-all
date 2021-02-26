@@ -26,7 +26,10 @@ format = """
 format="[$hostname]($style) "
 
 [directory]
-truncate_to_repo = false
+truncate_to_repo = true
+truncation_length = 8
+truncation_symbol = "···/"
+style = "black"
 
 [character]
 success_symbol="[ɔ](green)"
